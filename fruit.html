@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фрукты</title>
+
+    <link rel="stylesheet" type='text/css' href="css/animate.css">
+    <link rel='stylesheet' type='text/css' href='css\reset.css'>
+    <link rel="stylesheet" type="text/css" href='css\style.css'>
+    <link rel="stylesheet" type="text/css" href='css\fruits.css'>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Sans+Pro:wght@200;400;700;900&family=Spectral+SC:ital,wght@1,800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="style">
+
+    </div>
+    <div class="basket-hidden">
+        <div class='basket'></div>
+    </div>
+
+    <div class="all-hd">
+        <header class="header-header">
+            <div class="header-top ">
+                <div class="container">
+                    <div class="header-menu">
+                        <div class="open-menu">
+                            <img src="img/menu.png" alt="">
+                        </div>
+                        <div class="logo">
+                            <a href="#"> <img class='logo-img'
+                                    src="https://cdn4.iconfinder.com/data/icons/fruits-collection-full-color/150/Fruits_Collection-22-64.png"
+                                    alt=""> </a>
+                            <a href="#">
+                                <div class="header-name-our-firm">Фрустишка</div>
+                            </a>
+                        </div>
+
+                        <nav class="header-nav">
+                            <ul class='menu-list'>
+                                <li>
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li>
+                                    <a href="#">Фрукты</a>
+                                </li>
+                                <li>
+                                    <a href="other.html">Не фрукты</a>
+                                </li>
+                                <li>
+                                    <a href="we.html">О нас</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="bask-on">
+                            <img src="img/basket.png" alt="">
+                            <div class="basket-btn-text">Корзина</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <ul class='menu-list-ul'>
+            <li>
+                <a href="index.html">Главная</a>
+            </li>
+            <li>
+                <a href="#">Фрукты</a>
+            </li>
+            <li>
+                <a href="other.html">Не фрукты</a>
+            </li>
+            <li>
+                <a href="we.html">О нас</a>
+            </li>
+        </ul>
+
+        <section class="goods">
+            <div class="container">
+                <div class="goods-choice">
+                    <ul>
+                        <li class="all-fruits">
+                            Все
+                        </li>
+                        <li class="apples">
+                            Яблоки
+                        </li>
+                        <li class="bananas">
+                            Бананы
+                        </li>
+                        <li class="citrus">
+                            Цитрусовые
+                        </li>
+                        <li class="pears">
+                            Груши
+                        </li>
+                        <li class="persimmon">
+                            Хурма
+                        </li>
+                        <li class="grapes">
+                            Виноград
+                        </li>
+                        <li class="plums">
+                            Сливы
+                        </li>
+                        <li class="kiwi">
+                            Киви
+                        </li>
+                        <li class="pomegranate">
+                            Гранат
+                        </li>
+                        <li class="quince">
+                            Айва
+                        </li>
+                        <li class="exotic">
+                            Экзотика
+                        </li>
+                    </ul>
+                </div>
+                <div class="paragraph">
+                    <h4>А вот и наши вкуснейшие фрукты</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic
+                        consectetur sint repellendus ex vitae ab nesciunt saepe quos at in, laudantium magnam ipsa. Ex,
+                        rem
+                        architecto atque quisquam illo eos expedita eveniet! Porro praesentium soluta numquam qui sint
+                        quas
+                        quae, possimus deleniti necessitatibus fugit quibusdam?Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Non aliquam asperiores, corporis dignissimos tempora labore inventore voluptas
+                        pariatur laudantium maiores quia odit optio illum accusantium magni accusamus adipisci. Maiores
+                        voluptate, enim sed rerum velit animi numquam quia saepe, suscipit quidem delectus quasi ipsa
+                        repudiandae assumenda impedit magni vero quis excepturi.</p>
+                </div>
+                <div class="goods-items">
+
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-info">Здесь вся необходимая информация о нас</div>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <script type='text/javascript' src='js/jquery.js'></script>
+    <script type='text/javascript' src='js/wow.min.js'></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        //присвоение всем подтипам белый цвет на проверку к  checkGoods()
+        function restartBg() {
+            $('.all-fruits').css('background', 'white')
+            $('.apples').css('background', 'white')
+            $('.citrus').css('background', 'white')
+            $('.bananas').css('background', 'white')
+            $('.pears').css('background', 'white')
+            $('.persimmon').css('background', 'white')
+            $('.grapes').css('background', 'white')
+            $('.plums').css('background', 'white')
+            $('.kiwi').css('background', 'white')
+            $('.pomegranate').css('background', 'white')
+            $('.quince').css('background', 'white')
+            $('.exotic').css('background', 'white')
+                location.reload();
+        }
+        function checkColor() {
+            var fruitsList = ['all-fruits', 'apples', 'citrus', 'bananas', 'pears', 'persimmon', 'grapes', 'plums', 'kiwi', 'pomegranate', 'quince', 'exotic']
+            for (let i = 0; i < fruitsList.length; i++) {
+                var fruitName = '.' + fruitsList[i]
+                if ($(fruitName).css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                    var color = fruitName
+                }
+            }
+            localStorage.setItem('color', JSON.stringify(color))
+        }
+    </script>
+    <script>
+        //проверка и создание списка в зависимости от выбора подтипа
+        var data = ''
+        if (localStorage.getItem('color') != null) {
+            $(JSON.parse(localStorage.getItem('color'))).css('background', 'green')
+            if ($('.all-fruits').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box'){
+                $('.paragraph p').css('display','block')
+            }
+            else{
+                $('.paragraph p').css('display','none')
+                var out  = $(JSON.parse(localStorage.getItem('color'))).text()
+                $('.paragraph h4').html(out);
+            }
+        }
+        else {
+            $('.all-fruits').css('background', 'green')
+        }
+        checkColor()
+        $(JSON.parse(localStorage.getItem('color'))).css('background', 'green')
+
+        function checkGoods() {
+            if ($('.all-fruits').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                var data = {
+                    '1111': {
+                        'name': 'Яблоки Голден Азербайджан',
+                        'cost': 149.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,5 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '10,7 г',
+                        'calorie': '53 ккал',
+                        'time': '30 суток',
+                        'conditions': ' +3°C',
+                        'country': 'Азербайджан'
+                    },
+                    '1112': {
+                        'name': 'Груши Конференс',
+                        'cost': 239.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,5 г',
+                        'fats': '0,5 г',
+                        'carbohydrates': '12,5 г',
+                        'calorie': '48,43 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от -1°С до +3°С',
+                        'country': '-'
+                    },
+                    '1113': {
+                        'name': 'Яблоки Симиренко Сербия',
+                        'cost': 149.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,4 г',
+                        'fats': '0,4 г',
+                        'carbohydrates': '9 г',
+                        'calorie': '37 ккал',
+                        'time': '30 суток',
+                        'conditions': 'от +2°С до +8°С',
+                        'country': 'Сербия'
+                    },
+                    '1114': {
+                        'name': 'Яблоки Симиренко Азербайджан',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,3 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '14 г',
+                        'calorie': '52 ккал',
+                        'time': '30 суток',
+                        'conditions': 'от +2°С до +10°С',
+                        'country': 'Азербайджан'
+                    },
+                    '1115': {
+                        'name': 'Киви',
+                        'cost': 179.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '1 г',
+                        'fats': '0,6 г',
+                        'carbohydrates': '10,3 г',
+                        'calorie': '48 ккал',
+                        'time': 'до 6 недель',
+                        'conditions': 'от +8°С до +16°С в холодильнике',
+                        'country': 'Турция'
+                    },
+                    '1116': {
+                        'name': 'Груши Лукас',
+                        'cost': 224.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,3 г',
+                        'fats': '0,4 г',
+                        'carbohydrates': '10,7 г',
+                        'calorie': '43,6 ккал',
+                        'time': '15 суток',
+                        'conditions': 'от -1°С до +3°С',
+                        'country': 'Испания'
+                    },
+                    '1117': {
+                        'name': 'Мандарины ЮАР',
+                        'cost': 269.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,8 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '7,5 г',
+                        'calorie': '33 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +2°С до +5°С',
+                        'country': 'ЮАР'
+                    },
+                    '1118': {
+                        'name': 'Апельсины ЮАР',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '8,2 г',
+                        'calorie': '36 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +2 до +6 °С',
+                        'country': 'ЮАР'
+                    },
+                    '1119': {
+                        'name': 'Апельсины Турция',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '8,1 г',
+                        'calorie': '38 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +3 до +8 °С',
+                        'country': 'Турция'
+                    },
+                    '1120': {
+                        'name': 'Апельсины Испания',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '8,1 г',
+                        'calorie': '43 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +2 до +10 °С',
+                        'country': 'Испания'
+                    },
+                    '1121': {
+                        'name': 'Хурма королёк',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,72 г',
+                        'fats': '0,26 г',
+                        'carbohydrates': '24,37 г',
+                        'calorie': '92 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +3 до +7 °С',
+                        'country': '-'
+                    },
+                    '1122': {
+                        'name': 'Хурма Азербайджан',
+                        'cost': 219.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,5 г',
+                        'fats': '0,3 г',
+                        'carbohydrates': '15,3 г',
+                        'calorie': '66 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +5 до +8 °С',
+                        'country': 'Азербайджан'
+                    },
+                    '1123': {
+                        'name': 'Виноград Кишмиш Турция',
+                        'cost': 219.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '16,8 г',
+                        'calorie': '65 ккал',
+                        'time': '10 суток',
+                        'conditions': 'от +2°C до +6°C',
+                        'country': 'Турция'
+                    },
+                    '1124': {
+                        'name': 'Виноград Кишмиш Узбекистан',
+                        'cost': 219.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,21 г',
+                        'carbohydrates': '16,4 г',
+                        'calorie': '66 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +2°C до +6°C',
+                        'country': 'Узбекистан'
+                    },
+                    '1125': {
+                        'name': 'Виноград Лидия',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,25 г',
+                        'carbohydrates': '19 г',
+                        'calorie': '75 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от 0 до +3°C',
+                        'country': 'Сербия'
+                    },
+                    '1126': {
+                        'name': 'Виноград Дамские Пальчики',
+                        'cost': 179.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,54 г',
+                        'fats': '0,08  г',
+                        'carbohydrates': '14,93 г',
+                        'calorie': '60 ккал',
+                        'time': '10 суток',
+                        'conditions': 'от 0 до +2°C',
+                        'country': 'Узбекистан'
+                    },
+                    '1127': {
+                        'name': 'Сливы',
+                        'cost': 149.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,8 г',
+                        'fats': '0,3  г',
+                        'carbohydrates': '9,6 г',
+                        'calorie': '42 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +8°C до + 12°C',
+                        'country': 'Сербия'
+                    },
+                    '1128': {
+                        'name': 'Гранат',
+                        'cost': 189.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,7 г',
+                        'fats': '0,6  г',
+                        'carbohydrates': '14,5 г',
+                        'calorie': '72 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +4°C до + 6°C',
+                        'country': 'Азербайджан'
+                    },
+                    '1129': {
+                        'name': 'Айва',
+                        'cost': 199.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,5  г',
+                        'carbohydrates': '9,8 г',
+                        'calorie': '38 ккал',
+                        'time': '1,5 месяца',
+                        'conditions': 'от +7°С до +10°С',
+                        'country': 'Узбекистан'
+                    },
+                    '1130': {
+                        'name': 'Груши Азербайджан',
+                        'cost': 179.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,68 г',
+                        'fats': '0,17  г',
+                        'carbohydrates': '10,81 г',
+                        'calorie': '42,96 ккал',
+                        'time': '21 суток',
+                        'conditions': 'от +2°C до +6°C',
+                        'country': 'Азербайджан'
+                    },
+                    '1131': {
+                        'name': 'Яблоко Венгерка',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,4 г',
+                        'fats': '0,32  г',
+                        'carbohydrates': '9,7 г',
+                        'calorie': '42 ккал',
+                        'time': '2,5 месяца',
+                        'conditions': 'от +2°C до +4°C',
+                        'country': 'Азербайджан'
+                    },
+                    '1132': {
+                        'name': 'Бананы',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '1,5 г',
+                        'fats': '0,2  г',
+                        'carbohydrates': '21,8 г',
+                        'calorie': '95 ккал',
+                        'time': '6 суток',
+                        'conditions': '+14°С отдельно от всех продуктов',
+                        'country': 'Эквадор'
+                    },
+                    '1133': {
+                        'name': 'Манго',
+                        'cost': 359.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '0,5 г',
+                        'fats': '0,3  г',
+                        'carbohydrates': '11,5 г',
+                        'calorie': '67 ккал',
+                        'time': '9 суток',
+                        'conditions': 'от +8°C до + 12°C',
+                        'country': 'Тайланд'
+                    },
+                    '1134': {
+                        'name': 'Лайм',
+                        'cost': 59.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '0,9 г',
+                        'fats': '0,1  г',
+                        'carbohydrates': '3 г',
+                        'calorie': '16 ккал',
+                        'time': '20 суток',
+                        'conditions': 'от +8°C до + 12°C',
+                        'country': 'Мексика'
+                    },
+                    '1135': {
+                        'name': 'Кокос',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '3,4 г',
+                        'fats': '33,6  г',
+                        'carbohydrates': '6,2 г',
+                        'calorie': '354 ккал',
+                        'time': '25 суток',
+                        'conditions': 'от +2°С до +10°С',
+                        'country': 'Африка'
+                    },
+                    '1136': {
+                        'name': 'Ананас',
+                        'cost': 389.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '0,4 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '10,6 г',
+                        'calorie': '49 ккал',
+                        'time': '20 суток',
+                        'conditions': 'от +2°С до +10°С',
+                        'country': 'Эквадор'
+                    },
+                    '1137': {
+                        'name': 'Лимоны',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,1 г',
+                        'carbohydrates': '3 г',
+                        'calorie': '16 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'меньше +14°С',
+                        'country': 'Турция'
+                    },
+                }
+            }
+            if ($('.apples').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1111': {
+                        'name': 'Яблоко Голден',
+                        'cost': 149.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,5 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '10,7 г',
+                        'calorie': '53 ккал',
+                        'time': '30 суток',
+                        'conditions': 'При температуре +3°C',
+                        'country': 'Азербайджан'
+                    },
+                    '1113': {
+                        'name': 'Яблоки Симиренко Сербия',
+                        'cost': 149.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,4 г',
+                        'fats': '0,4 г',
+                        'carbohydrates': '9 г',
+                        'calorie': '37 ккал',
+                        'time': '30 суток',
+                        'conditions': 'от +2°С до +8°С',
+                        'country': 'Сербия'
+                    },
+                    '1114': {
+                        'name': 'Яблоки Симиренко Азербайджан',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,3 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '14 г',
+                        'calorie': '52 ккал',
+                        'time': '30 суток',
+                        'conditions': 'от +2°С до +10°С',
+                        'country': 'Азербайджан'
+                    },
+                    '1131': {
+                        'name': 'Яблоко Венгерка',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,4 г',
+                        'fats': '0,32  г',
+                        'carbohydrates': '9,7 г',
+                        'calorie': '42 ккал',
+                        'time': '2,5 месяца',
+                        'conditions': 'от +2°C до +4°C',
+                        'country': 'Азербайджан'
+                    },
+                }
+            }
+            if ($('.bananas').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1132': {
+                        'name': 'Бананы',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/bananas.jpg',
+                        'weight': '1 кг',
+                        'proteins': '1,5 г',
+                        'fats': '0,2  г',
+                        'carbohydrates': '21,8 г',
+                        'calorie': '95 ккал',
+                        'time': '6 суток',
+                        'conditions': '+14°С отдельно от всех продуктов',
+                        'country': 'Эквадор'
+                    }
+                }
+            }
+            if ($('.citrus').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1117': {
+                        'name': 'Мандарины ЮАР',
+                        'cost': 269.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,8 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '7,5 г',
+                        'calorie': '33 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +2°С до +5°С',
+                        'country': 'ЮАР'
+                    },
+                    '1116': {
+                        'name': 'Лимоны',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,1 г',
+                        'carbohydrates': '3 г',
+                        'calorie': '16 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'меньше +14°С',
+                        'country': 'Турция'
+                    },
+                    '1118': {
+                        'name': 'Апельсины ЮАР',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '8,2 г',
+                        'calorie': '36 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +2 до +6 °С',
+                        'country': 'ЮАР'
+                    },
+                    '1119': {
+                        'name': 'Апельсины Турция',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '8,1 г',
+                        'calorie': '38 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +3 до +8 °С',
+                        'country': 'Турция'
+                    },
+                    '1120': {
+                        'name': 'Апельсины Испания',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,9 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '8,1 г',
+                        'calorie': '43 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +2 до +10 °С',
+                        'country': 'Испания'
+                    },
+                    '1134': {
+                        'name': 'Лайм',
+                        'cost': 59.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '0,9 г',
+                        'fats': '0,1  г',
+                        'carbohydrates': '3 г',
+                        'calorie': '16 ккал',
+                        'time': '20 суток',
+                        'conditions': 'от +8°C до + 12°C',
+                        'country': 'Мексика'
+                    }
+                }
+            }
+            if ($('.pears').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1112': {
+                        'name': 'Груши Конференс',
+                        'cost': 239.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,5 г',
+                        'fats': '0,5 г',
+                        'carbohydrates': '12,5 г',
+                        'calorie': '48,43 ккал',
+                        'time': '14 суток',
+                        'conditions': 'При температуре от -1°С до +3°С',
+                        'country': '-'
+                    },
+                    '1116': {
+                        'name': 'Груши Лукас',
+                        'cost': 224.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,3 г',
+                        'fats': '0,4 г',
+                        'carbohydrates': '10,7 г',
+                        'calorie': '43,6 ккал',
+                        'time': '15 суток',
+                        'conditions': 'от -1°С до +3°С',
+                        'country': 'Испания'
+                    },
+                    '1130': {
+                        'name': 'Груши Азербайджан',
+                        'cost': 179.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,68 г',
+                        'fats': '0,17  г',
+                        'carbohydrates': '10,81 г',
+                        'calorie': '42,96 ккал',
+                        'time': '21 суток',
+                        'conditions': 'от +2°C до +6°C',
+                        'country': 'Азербайджан'
+                    },
+                }
+            }
+            if ($('.persimmon').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1121': {
+                        'name': 'Хурма королёк',
+                        'cost': 119.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,72 г',
+                        'fats': '0,26 г',
+                        'carbohydrates': '24,37 г',
+                        'calorie': '92 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +3 до +7 °С',
+                        'country': '-'
+                    },
+                    '1122': {
+                        'name': 'Хурма Азербайджан',
+                        'cost': 219.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,5 г',
+                        'fats': '0,3 г',
+                        'carbohydrates': '15,3 г',
+                        'calorie': '66 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +5 до +8 °С',
+                        'country': 'Азербайджан'
+                    },
+                }
+            }
+            if ($('.grapes').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1123': {
+                        'name': 'Виноград Кишмиш Турция',
+                        'cost': 219.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '16,8 г',
+                        'calorie': '65 ккал',
+                        'time': '10 суток',
+                        'conditions': 'от +2°C до +6°C',
+                        'country': 'Турция'
+                    },
+                    '1124': {
+                        'name': 'Виноград Кишмиш Узбекистан',
+                        'cost': 219.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,21 г',
+                        'carbohydrates': '16,4 г',
+                        'calorie': '66 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +2°C до +6°C',
+                        'country': 'Узбекистан'
+                    },
+                    '1125': {
+                        'name': 'Виноград Лидия',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,25 г',
+                        'carbohydrates': '19 г',
+                        'calorie': '75 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от 0 до +3°C',
+                        'country': 'Сербия'
+                    },
+                    '1126': {
+                        'name': 'Виноград Дамские Пальчики',
+                        'cost': 179.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,54 г',
+                        'fats': '0,08  г',
+                        'carbohydrates': '14,93 г',
+                        'calorie': '60 ккал',
+                        'time': '10 суток',
+                        'conditions': 'от 0 до +2°C',
+                        'country': 'Узбекистан'
+                    },
+                }
+            }
+
+            if ($('.plums').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1127': {
+                        'name': 'Сливы',
+                        'cost': 149.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,8 г',
+                        'fats': '0,3  г',
+                        'carbohydrates': '9,6 г',
+                        'calorie': '42 ккал',
+                        'time': '14 суток',
+                        'conditions': 'от +8°C до + 12°C',
+                        'country': 'Сербия'
+                    }
+
+                }
+            }
+            if ($('.kiwi').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1115': {
+                        'name': 'Киви',
+                        'cost': 179.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/apple.jpg',
+                        'weight': '1 кг',
+                        'proteins': '1 г',
+                        'fats': '0,6 г',
+                        'carbohydrates': '10,3 г',
+                        'calorie': '48 ккал',
+                        'time': 'до 6 недель',
+                        'conditions': 'от +8°С до +16°С в холодильнике',
+                        'country': 'Турция'
+                    },
+                }
+            }
+            if ($('.pomegranate').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1128': {
+                        'name': 'Гранат',
+                        'cost': 189.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,7 г',
+                        'fats': '0,6  г',
+                        'carbohydrates': '14,5 г',
+                        'calorie': '72 ккал',
+                        'time': '2 месяца',
+                        'conditions': 'от +4°C до + 6°C',
+                        'country': 'Азербайджан'
+                    },
+                }
+            }
+
+            if ($('.quince').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1129': {
+                        'name': 'Айва',
+                        'cost': 199.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 кг',
+                        'proteins': '0,6 г',
+                        'fats': '0,5  г',
+                        'carbohydrates': '9,8 г',
+                        'calorie': '38 ккал',
+                        'time': '1,5 месяца',
+                        'conditions': 'от +7°С до +10°С',
+                        'country': 'Узбекистан'
+                    },
+                }
+            }
+            if ($('.exotic').css('background') == 'rgb(0, 128, 0) none repeat scroll 0% 0% / auto padding-box border-box') {
+                data = {
+                    '1133': {
+                        'name': 'Манго',
+                        'cost': 359.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '0,5 г',
+                        'fats': '0,3  г',
+                        'carbohydrates': '11,5 г',
+                        'calorie': '67 ккал',
+                        'time': '9 суток',
+                        'conditions': 'от +8°C до + 12°C',
+                        'country': 'Тайланд'
+                    },
+                    '1135': {
+                        'name': 'Кокос',
+                        'cost': 169.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '3,4 г',
+                        'fats': '33,6  г',
+                        'carbohydrates': '6,2 г',
+                        'calorie': '354 ккал',
+                        'time': '25 суток',
+                        'conditions': 'от +2°С до +10°С',
+                        'country': 'Африка'
+                    },
+                    '1136': {
+                        'name': 'Ананас',
+                        'cost': 389.90,
+                        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis eaque cumque fugiat id hic consectetur sint repellendus ex vitae ab nesciunt',
+                        'image': 'img/pear.jpg',
+                        'weight': '1 шт',
+                        'proteins': '0,4 г',
+                        'fats': '0,2 г',
+                        'carbohydrates': '10,6 г',
+                        'calorie': '49 ккал',
+                        'time': '20 суток',
+                        'conditions': 'от +2°С до +10°С',
+                        'country': 'Эквадор'
+                    },
+                }
+            }
+
+
+            return data
+        }
+        var data = checkGoods()
+    </script>
+
+    <script>
+        //действия на нажатие подтипа
+        $('.apples').on('click', function () {
+            restartBg()
+            $('.apples').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+
+        });
+        $('.all-fruits').on('click', function () {
+            restartBg()
+            $('.all-fruits').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.bananas').on('click', function () {
+            restartBg()
+            $('.bananas').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.citrus').on('click', function () {
+            restartBg()
+            $('.citrus').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.pears').on('click', function () {
+            restartBg()
+            $('.pears').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.persimmon').on('click', function () {
+            restartBg()
+            $('.persimmon').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.grapes').on('click', function () {
+            restartBg()
+            $('.grapes').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.plums').on('click', function () {
+            restartBg()
+            $('.plums').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.kiwi').on('click', function () {
+            restartBg()
+            $('.kiwi').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.pomegranate').on('click', function () {
+            restartBg()
+            $('.pomegranate').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.quince').on('click', function () {
+            restartBg()
+            $('.quince').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+        $('.exotic').on('click', function () {
+            restartBg()
+            $('.exotic').css('background', 'green')
+            data = checkGoods()
+            loadGoods()
+            checkColor()
+        });
+
+
+    </script>
+    <script type='text/javascript' src='js/main.js'></script>
+    <script type='text/javascript' src='js/fruits.js'></script>
+
+</body>
+
+</html>

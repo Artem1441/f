@@ -1,0 +1,48 @@
+.header-top{
+   background:  #d58300;
+}
+.goods {
+    margin-top: 45px;
+}
+
+.basket-hidden {
+    top: 0;
+} 
+
+.goods-choice{
+    padding-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.goods-choice ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.goods-choice li{
+    margin-right: 6px;
+    border-radius: 6px;
+    margin-top: 10px;
+    color: #393939;
+    background: #fff;
+    border: 1px solid #e7e4e4;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 6px 14px;
+    font-size: 14px;
+    line-height: 1.62857143;
+}
+@media(max-width:1170px){
+    .goods {
+        margin-top: 46px;
+    }
+    .goods-choice{
+        margin-top: 0;
+    }
+}
